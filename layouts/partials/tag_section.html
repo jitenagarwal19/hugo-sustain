@@ -1,0 +1,12 @@
+<div class="tag-section">
+ <h3>Popular Blog Topics</h3>
+  <div class="container">
+  {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+    <a href="/tags/{{ .Name  }}"> <span class="label label-success">{{ .Name }} ({{ .Count }})</span> </a>
+  {{ end }}
+  </div>
+</div>
+
+
+
+
